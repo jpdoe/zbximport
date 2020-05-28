@@ -1,2 +1,2 @@
 # zbx_import
-Script to export data from GLPI to Zabbix
+Script to import data from GLPI to Zabbix
