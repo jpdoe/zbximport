@@ -219,7 +219,7 @@ def get_zabbix_items(item_type, zabbix_api):
             all_zabbix_template_raw = zabbix_api.template.get()
         except ZabbixAPIException as error:
             logger.error(error)
-            logger.error("Nejdou ziskat Zabbix templaty")
+            logger.error("Nejdou ziskat Zabbix templates")
 
         return {
             template["host"]: template["templateid"]
@@ -235,7 +235,7 @@ def get_zabbix_items(item_type, zabbix_api):
             all_zabbix_hostgroup_raw = zabbix_api.hostgroup.get()
         except ZabbixAPIException as error:
             logger.error(error)
-            logger.error("Nejdou ziskat Zabbix hostgroupy")
+            logger.error("Nejdou ziskat Zabbix hostgroups")
 
         return {
             hostgroup["name"]: hostgroup["groupid"]
